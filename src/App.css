@@ -1,0 +1,200 @@
+body {
+  background: linear-gradient(to right, rgba(198, 38, 65, 0.314), rgba(43, 118, 184, 0.468));
+  font-family: sans-serif;
+}
+
+.App {
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+ 
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #12a8da;
+  font-size: 30px;
+  margin-left: 50px;
+  font-family: 'Courier New', Courier;
+  text-shadow: 2px 2px 8px rgba(115, 115, 226, 0.799);
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.products, .liked-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.liked-products {
+  text-align: center; /* Elementni o'rtada joylashish uchun */
+}
+
+.liked-products h2 {
+
+  font-size: 24px; /* Misolcha uchun, sizga mos keladigan o'lchamni tanlang */
+  color: #333; /* Matn rangi */
+  margin-bottom: 80px;
+  color:grey; /* Pastdagi margin */
+}
+
+
+.card, .liked-card {
+  border: 1px solid #680a61ae;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.card img, .liked-card img {
+  width: 100%;
+  height: auto;
+}
+
+.card h3, .liked-card h3 {
+  margin: 10px 0;
+  color:#0880a8;
+}
+
+.card .description {
+  text-align: left;
+  overflow-y: auto; 
+  max-height: 6em; 
+  transition: max-height 0.5s ease; 
+}
+
+.card .description.expanded {
+  max-height: none; 
+}
+
+.card .description p {
+  margin: 0; 
+}
+
+.card .see-more {
+  color: blue;
+  cursor: pointer;
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
+
+.like-button {
+  background-color: #008cba;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top:auto;
+}
+
+.like-button.liked {
+  background-color: red;
+}
+
+.unlike-button {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.card {
+  border: 1px solid #6e0b695a;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+
+}
+
+.card h3 {
+  margin: 10px 0;
+}
+
+.card .description {
+  overflow-y: auto;
+  max-height: 6em;
+  transition: max-height 0.3s ease;
+  position: relative;
+}
+
+.card.expanded .description {
+  max-height: none;
+}
+
+.card .description p {
+  margin: 0;
+  color: grey;
+}
+
+.card .see-more {
+  color: blue;
+  cursor: pointer;
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
+
+.like-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 90px;
+}
+
+
+.card {
+  margin-top: 50px;
+}
+
+.details-button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #1763b5;
+  color: rgb(228, 226, 226);
+  border: none;
+  border-radius: 3px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.details-button:hover {
+  background-color: #0056b3;
+}
